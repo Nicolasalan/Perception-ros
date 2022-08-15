@@ -1,4 +1,4 @@
 rospy
-cv2
+opencv-python
 numpy
 matplotlib
