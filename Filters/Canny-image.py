@@ -6,7 +6,7 @@ from cv_bridge import CvBridge, CvBridgeError
 import cv2
 import numpy as np
 
-
+# DETECTAR UMA AMPLA MARGEM DE BORDAS NA IMAGEM 
 class CannyFilter(object):
 
     def __init__(self):

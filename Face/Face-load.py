@@ -6,7 +6,7 @@ from cv_bridge import CvBridge, CvBridgeError
 import numpy as np
 import cv2
 
-
+# CARREGAR IMAGEM DE PESSOA 
 class LoadFace(object):
 
     def __init__(self):

@@ -22,18 +22,18 @@ class MostrarImagem(object): # definicao da classe
                print(e)
           arquivo = '{caminho da imagem}.png'
 
-          #Importe a biblioteca numpy que ajudará em algumas operações de matriz
+          # Importe a biblioteca numpy que ajudará em algumas operações de matriz
           image = cv2.imread(arquivo)
 
-          #Redimensionei a imagem para que seja mais fácil trabalhar com
+          # Redimensionei a imagem para que seja mais fácil trabalhar com
           image = cv2.resize(image,(300,300))
 
           # Uma vez que lemos a imagem, precisamos mudar o espaço de cores para HSV
           hsv = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
 
-          #Hsv limites são definidos
-          #aqui é onde você define a gama de cores que procura
-          #cada valor do vetor corresponde aos valores H, S e V respectivamente
+          # Hsv limites são definidos
+          # aqui é onde você define a gama de cores que procura
+          # cada valor do vetor corresponde aos valores H, S e V respectivamente
           min_green = np.array([50,220,220])
           max_green = np.array([60,255,255])
 
@@ -44,9 +44,9 @@ class MostrarImagem(object): # definicao da classe
           max_blue = np.array([120,255,255])
 
 
-          #Esta é a detecção de cor real
-          #Aqui vamos criar uma máscara que contém apenas as cores definidas em seus limites
-          #Esta máscara tem apenas uma dimensão, então é preto e branco
+          # Esta é a detecção de cor real
+          # Aqui vamos criar uma máscara que contém apenas as cores definidas em seus limites
+          # Esta máscara tem apenas uma dimensão, então é preto e branco
           mask_g = cv2.inRange(hsv, min_green, max_green)
           mask_r = cv2.inRange(hsv, min_red, max_red)
           mask_b = cv2.inRange(hsv, min_blue, max_blue)

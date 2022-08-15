@@ -6,7 +6,7 @@ from cv_bridge import CvBridge, CvBridgeError
 import numpy as np
 import cv2
 
-
+# DETECTOR DE FACE COM VIDEO
 class LoadFace(object):
 
     def __init__(self):
@@ -52,7 +52,7 @@ class LoadFace(object):
                for (ex,ey,ew,eh) in eyes:
                     cv2.rectangle(roi, (ex,ey),(ex+ew,ey+eh),(0,255,0),2)
           
-          cv2.imshow('Face',imagem_original)
+          cv2.imshow('Face origin',imagem_original)
           cv2.imshow('Face',img)
 
           cv2.waitKey(1)
