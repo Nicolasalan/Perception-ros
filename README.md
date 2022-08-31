@@ -1,5 +1,5 @@
 # Perception ROS
-Esse repositório contem scripts relacionados a OpenCV integrados no ROS, para tarefas simples, foi realizado utilizando ROS Noetic e OpenCV.
+Esse repositório contem scripts relacionados a OpenCV integrados no ROS, para tarefas simples, foi realizado utilizando `ROS Noetic` e `OpenCV`.
 
 Para utilizar esse repositório.
 ```
