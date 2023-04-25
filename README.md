@@ -1,15 +1,14 @@
 # Perception ROS
-Esse repositório contem scripts relacionados a OpenCV integrados no ROS, para tarefas simples, foi realizado utilizando `ROS Noetic` e `OpenCV`.
-
+This repository contains OpenCV-related scripts integrated into ROS, for simple tasks, it was accomplished using `ROS Noetic` and `OpenCV`.
 ![](https://github.com/Nicolasalan/Perception-ros/blob/main/vision_extraction/docs/IMG_2572.GIF)
 
-Para utilizar esse repositório.
+To use this repository.
 ```
 git clone https://github.com/Nicolasalan/Perception-ros.git 
 ```
-Logo em seguida instalar requerimentos.
+Then install requirements.
 ```
 cd Perception-ros
 pip3 install -r requirements.txt
 ```
-Todos os scripts estão comentados para uma melhor compreensão.
+All scripts are commented for better understanding.
